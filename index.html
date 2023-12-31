@@ -12,6 +12,21 @@
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/common.js"></script>
 
+    <script>
+        $(function(){
+    // 메뉴 를 마우스로 over시 서브영역이 나타나게.
+    $("header, .ham").click({
+        mouseover:function(){
+            $(".submenu").stop().animate({left:'500px'} , 400, 'linear')
+    },
+
+        mouseout:function(){
+            $("nav").stop().animate({left:'0px'},400,'linear')
+        }
+    });           
+/////////////
+    });
+    </script>
 
 </head>
 
@@ -45,7 +60,7 @@
         <div class="submenu">
             <nav>
                 <ul>
-                    <li><i class="fa-solid fa-xmark" style="color: #000000;"></i></li>
+                    <!-- <li><i class="fa-solid fa-xmark" style="color: #000000;"></i></li> -->
                     <li><a href="#">경복궁 소개</a></li>
                     <li><a href="#">관람안내</a></li>
                     <li><a href="#">관람예약·신청</a></li>
