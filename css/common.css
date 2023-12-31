@@ -61,6 +61,8 @@ td {
     overflow: hidden;
     text-overflow: ellipsis;
     margin-bottom: 20px;
+    vertical-align: middle;
+    text-align: center;
 }
 
 td:first-child {
@@ -326,7 +328,7 @@ main {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    color: #564545;
+    color: #5b4036;
     margin-bottom: 100px;
     overflow: hidden;
 }
@@ -586,9 +588,13 @@ main {
     }
 
     header nav {
-        display: none;
+        display:none;
     }
 
+    .video{
+        position: relative;
+        top: 80px;
+    }
 
     .ham {
         display: block;
@@ -706,6 +712,12 @@ main {
         display: none;
     }
 
+    .video{
+        position: relative;
+        top: 80px;
+    }
+
+
 
     .ham {
         display: block;
@@ -781,8 +793,9 @@ main {
 @media screen and (max-width:575px) {
     header {
         width: 100%;
-        height: 60px;
+        height: 50px;
         background-color: #fff;
+        margin-bottom: 0;
     }
 
     header .header_i {
@@ -797,6 +810,7 @@ main {
     header .header_i h1{
         width: 150px;
         height: 100%;
+        padding-top: 5px;
     }
 
     header .header_i .ham{
@@ -805,6 +819,11 @@ main {
 
     header nav {
         display: none;
+    }
+
+    .video{
+        position: relative;
+        top: 50px;
     }
 
 
@@ -950,6 +969,61 @@ main {
 }
 
 @media screen and (max-width:400px) {
+    header {
+        width: 100%;
+        height: 50px;
+        background-color: #fff;
+        margin-bottom: 0;
+    }
+
+    header .header_i {
+        width: calc(100% - 32px);
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header .header_i h1{
+        width: 150px;
+        height: 100%;
+        padding-top: 5px;
+    }
+
+    .video{
+        position: relative;
+        top: 50px;
+    }
+
+    .s2 p{
+        font-size: 0.85rem;
+    }
+
+    .section_02 .s2_t h5{
+        font-size: 1.3rem;        margin-bottom: 30px;
+    }
+
+    .section_02 .s2_t p{
+        font-size: 0.75rem;        
+    }
+
+    .s3_banner h5{
+        padding-left: 0px;
+        font-size: 1.5rem;
+        line-height: 200%;
+
+    }
+
+    .section_03 .s3_c .s3_t h5{
+        font-size: 1.3rem;
+    }
+
+    .section_04 .s4_top .s4_noti td:first-child{
+        width: 270px;
+    }
+
+
     .s4_bottom .bus {
         float: left;
 
@@ -965,6 +1039,10 @@ main {
         padding-right: 15px;
     }
 
+    .section_04 .s4_top .s4_noti{
+        width: 99%;
+        margin: auto;
+    }
     .train .move {
         margin: 0;
     }
