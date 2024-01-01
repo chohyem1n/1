@@ -155,13 +155,17 @@ header nav ul li:last-child {
     margin-right: 0;
 }
 
+/* submenu */
 .ham {
     display: none;
 }
 
 .submenu {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
     position: absolute;
-    display: block;
+    display: none;
     right: 0;
     top: 80px;
     text-align: center;
@@ -171,16 +175,6 @@ header nav ul li:last-child {
     display: flex;
     align-items: center;
     flex-direction: column;
-
-}
-
-.submenu nav ul li{
-    display: flex;
-    align-items: center;
-    width: 275px;
-    height: 85px;
-    padding-left: 30px;
-    margin: 0;
 
 }
 
@@ -207,7 +201,11 @@ header nav ul li:last-child {
     background-color: #333;
     color: #fff;
 }
+/* //submenu */
 
+/* season */
+
+/* //season */
 
 main {
     width: 100%;
@@ -539,7 +537,7 @@ main {
 }
 
 
-@media screen and (min-width:992px) and (max-width:1199px) {
+@media screen and (min-width:991px) and (max-width:1199px) {
 
     header {
         width: 100%;
@@ -556,11 +554,6 @@ main {
         align-items: center;
         justify-content: space-between;
     }
-
-
-    /* main{
-        height: 30vh;
-    } */
 
     .s2 {
         margin-bottom: 150px;
@@ -608,6 +601,11 @@ main {
         display:none;
     }
 
+    /* sub nav */
+
+
+    /* //sub nav */
+
     .video{
         position: relative;
         top: 80px;
@@ -619,10 +617,6 @@ main {
         color: #000;
         line-height: 80px;
         cursor: pointer;
-    }
-
-    .submenu {
-        display: block;
     }
 
     .info .b_t {
